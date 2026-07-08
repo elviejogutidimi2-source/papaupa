@@ -283,6 +283,20 @@ img{max-width:100%;display:block}
   .hero__arch{border-top-left-radius:150px;border-top-right-radius:150px;padding-top:36px}
   .adm-row{grid-template-columns:44px 1fr;grid-template-areas:"img info" "act act"}
   .adm-row__img{grid-area:img}.adm-row__info{grid-area:info}.adm-row__act{grid-area:act;justify-content:flex-end}
+  /* carta compacta: 2-3 platos por fila */
+  .dishes{grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:12px}
+  .dish{border-radius:12px}
+  .dish__body{padding:10px 11px;gap:5px}
+  .dish__top{flex-direction:column;gap:1px;align-items:flex-start}
+  .dish__name{font-size:.98rem;line-height:1.08}
+  .dish__price{font-size:.98rem}
+  .dish__desc{font-size:.8rem;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .badges{gap:4px}
+  .badge{font-size:.58rem;padding:.2em .45em}
+  .cat{margin-bottom:30px}
+  .cat__title{margin-bottom:14px}
+  .cat__title h3{font-size:1.5rem}
+  .sec{padding:44px 0}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
 </style>
